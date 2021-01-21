@@ -36,7 +36,25 @@ function expect(target) {
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
 //
 // ONLY ADD CODE TO THIS SECTION
-function Human()
+function Human({name = undefined , cool = false} = {}) {
+  this.name = name;
+  this.cool = cool;
+  //create a function that accepts a dog as a parameter and changes the dogs' status to happy
+  this.pet = function(dog) {
+    dog.status = 'happy'
+  }
+  //create a function that feeds a dog and sets the hunger status to false
+  this.feed = function(dog) {
+    dog.hungry = false
+  }
+}
+
+function Dog({color = 'no color', hungry = true, owner = new Human(), status = 'normal'} = {}) {
+  this.color = color;
+  this.hungry = hungry;
+  this.owner = owner;
+  this.status = status;
+}
 
 
 //     __
