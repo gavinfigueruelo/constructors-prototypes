@@ -36,10 +36,7 @@ function expect(target) {
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
 //
 // ONLY ADD CODE TO THIS SECTION
-const Human = {name};
-function pet() {
-
-}
+function Human()
 
 
 //     __
